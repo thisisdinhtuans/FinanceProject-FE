@@ -5,7 +5,7 @@ import { CompanyProfile } from '../../company';
 import Sidebar from '../../Components/Sidebar/Sidebar';
 import CompanyDashboard from '../../Components/CompanyDashboard/CompanyDashboard';
 import Tile from '../../Components/Tile/Tile';
-import Spinner from '../../Components/Spinner/Spinner';
+import Spinner from '../../Components/Spinners/Spinner';
 import CompFinder from '../../Components/CompFinder/CompFinder';
 import TenKFinder from '../../Components/TenKFinder/TenKFinder';
 

@@ -3,8 +3,8 @@ import { CompanyBalanceSheet } from '../../company';
 import { useOutletContext } from 'react-router';
 import { getBalanceSheet } from '../../api';
 import RatioList from '../RatioList/RatioList';
-import Spinner from '../Spinner/Spinner';
-import "../Spinner/Spinner.css";
+import Spinner from '../Spinners/Spinner';
+import "../Spinners/Spinner.css";
 import {
   formatLargeMonetaryNumber,
   formatLargeNonMonetaryNumber,

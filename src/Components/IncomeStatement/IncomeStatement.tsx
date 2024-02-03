@@ -3,7 +3,7 @@ import { CompanyIncomeStatement } from '../../company';
 import { useOutletContext } from 'react-router-dom';
 import { getIncomeStatement } from '../../api';
 import Table from '../Table/Table';
-import Spinner from '../Spinner/Spinner';
+import Spinner from '../Spinners/Spinner';
 import {
   formatLargeMonetaryNumber,
   formatRatio,

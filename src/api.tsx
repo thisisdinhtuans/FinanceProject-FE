@@ -1,9 +1,18 @@
 import axios from "axios"
-import { CompanyBalanceSheet, CompanyCashFlow, CompanyCompData, CompanyIncomeStatement, CompanyKeyMetrics, CompanyProfile, CompanySearch,CompanyTenK } from "./company"
+import { CompanyBalanceSheet, CompanyCashFlow, CompanyCompData, CompanyIncomeStatement, CompanyKeyMetrics, CompanyProfile, CompanySearch,CompanyTenK,CompanyHistoricalDividend,Dividend } from "./company"
 interface SearchResponse {
     data: CompanySearch[];
 }
-
+export const getHistoricalDividend = async (query: string) => {
+  try {
+    const data = await axios.get<CompanyHistoricalDividend>(
+      `https://financialmodelingprep.com/api/v3/historical-price-full/stock_dividend/${query}?apikey=${process.env.REACT_APP_API_KEY}`
+    );
+    return data;
+  } catch (error: any) {
+    console.log("error message: ", error.message);
+  }
+};
 export const searchCompanies = async (query:string)=> {
     try {
         const data=await axios.get<SearchResponse>(

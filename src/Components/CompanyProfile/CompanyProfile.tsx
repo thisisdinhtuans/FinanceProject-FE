@@ -5,7 +5,7 @@ import { CompanyKeyMetrics } from "../../company";
 import { getKeyMetrics } from "../../api";
 import RatioList from "../RatioList/RatioList";
 import Tile from "../Tile/Tile";
-import Spinner from "../Spinner/Spinner";
+import Spinner from "../Spinners/Spinner";
 import {
   formatLargeNonMonetaryNumber,
   formatRatio,

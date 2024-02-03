@@ -3,7 +3,7 @@ import { CompanyCashFlow, CompanyIncomeStatement } from '../../company';
 import { useOutletContext } from 'react-router';
 import { getCashFlowStatement } from '../../api';
 import Table from '../Table/Table';
-import Spinner from '../Spinner/Spinner';
+import Spinner from '../Spinners/Spinner';
 import { formatLargeMonetaryNumber } from "../../Helpers/NumberFormatting";
 
 type Props = {}
