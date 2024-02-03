@@ -8,7 +8,8 @@ export const searchCompanies = async (query:string)=> {
     try {
         const data=await axios.get<SearchResponse>(
             `https://financialmodelingprep.com/api/v3/search?query=${query}&limit=10&exchange=NASDAQ&apikey=${process.env.REACT_APP_API_KEY}`
-        );
+            // `http://localhost:5296/api/stock`
+            );
         return data;
     } catch (error) {
         if(axios.isAxiosError(error)) {
@@ -25,6 +26,7 @@ export const getCompanyProfile = async (query: string) => {
     try {
       const data = await axios.get<CompanyProfile[]>(
         `https://financialmodelingprep.com/api/v3/profile/${query}?apikey=${process.env.REACT_APP_API_KEY}`
+        // `http://localhost:5296/api/stock/${query}`
       );
       return data;
     } catch (error: any) {
